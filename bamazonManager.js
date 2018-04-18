@@ -4,8 +4,8 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
-  password: '',
-  database: 'bamazon'
+  password: 'root',
+  database: 'bamazonDB'
 });
 
 connection.connect();
@@ -32,9 +32,9 @@ function askQuestions() {
       case "Add New Product":
         addProduct()
         break;
-      default:
+      //default:
 
-        break;
+       // break;
     }
   });
 }
